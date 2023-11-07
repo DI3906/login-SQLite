@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECECEC"
+    tools:context=".Calculadora">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Calculadora Básica"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:id="@+id/imagenView2"
+        android:layout_width="365dp"
+        android:layout_height="148dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        app:srcCompat="@drawable/blackboard" />
+
+    <EditText
+        android:id="@+id/txtNum1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/input_style"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Ingrese el primer número"
+        android:inputType="text"
+        android:paddingLeft="25dp"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtNum2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/input_style"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Ingrese el segundo número"
+        android:inputType="text"
+        android:paddingLeft="25dp"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#000000"
+            android:text="Sumar"
+            android:textColorHighlight="#73BBC9"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#000000"
+            android:text="Restar"
+            android:textColorHighlight="#73BBC9"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_multiplicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#000000"
+            android:text="Multiplicar"
+            android:textColorHighlight="#73BBC9"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#000000"
+            android:text="Dividir"
+            android:textColorHighlight="#73BBC9"
+            android:textSize="20dp"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Calcular"
+        android:textAllCaps="true"
+        android:textColor="#ECECEC"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Resultado:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

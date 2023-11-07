@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--P A L E T A  D E  C O L O R E S  A  U T I L I Z A R-->
+    <color name="funGreen">#186049</color>
+    <color name="eden">#247158</color>
+    <color name="tradewind">#6AB29B</color>
+    <color name="dawnPink">#E4D5C7</color>
+    <color name="almondFrost">#95877A</color>
+
+    <color name="background">#f0f0f0</color>
+    <color name="background2">#d8d8d8</color>
+
+</resources>
